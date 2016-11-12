@@ -1,0 +1,24 @@
+
+i = 0;
+for(i=0; i==j; i=i+j+1)
+{
+    b = 6;
+    a = 2 + 5;
+}
+
+switch(i)
+{
+    case 1:
+        do = something;
+        break;
+    case 2:
+        do = something;
+        break;
+    default:
+        break;
+}
+
+while( j < 5 )
+{
+    j++ ;
+}
