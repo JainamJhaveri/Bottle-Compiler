@@ -20,8 +20,9 @@ if			{return IF;}
 else			{return ELSE;}
 elseif			{return ELSEIF;}
 
-[0-9]+ 			{return INT;}
-[a-zA-Z_][_a-zA-Z0-9]* 	{return VAR;}
+[0-9]+ 			{  yylval = atoi(yytext); 
+			   return INT;}
+[a-zA-Z_][_a-zA-Z0-9]* 	{yylval = makeEntry(yytext);	return VAR;}
 [0-9]([\.][0-9]+)? 	{return FLOAT;}
 
 
