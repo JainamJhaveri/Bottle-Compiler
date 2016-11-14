@@ -27,9 +27,9 @@ elseif			{return ELSEIF;}
 
 "&&" 			{return AND_AND;}
 "||" 			{return OR_OR;} 
-'<'		 	{return LT;}
-'<='		 	{return LE;}
-'>'		 	{return GT;}
+"<"		 	{return LT;}
+"<="		 	{return LE;}
+">"		 	{return GT;}
 ">="		 	{return GE;}
 "==" 			{return EQ_EQ;}
 "!=" 			{return N_EQ;}
@@ -45,6 +45,8 @@ elseif			{return ELSEIF;}
 "+"			{ return '+'; }
 "*"			{ return '*'; }
 "/"			{ return '/'; }
+"{"			{ return '{'; }
+"}"			{ return '}'; }
 
 [ \t\n]+ 		{;}
 
